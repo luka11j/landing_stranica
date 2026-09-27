@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+@theme {
+    --color-auto: #dc2626;
+    --color-auto-dark: #991b1b;
+
+    --font-auto: Arial, sans-serif;
+}
+
+
+@utility btn-auto {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background-color: var(--color-auto);
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+@utility car-card {
+    border-radius: 1rem;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    padding: 2rem;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .car-card {
+        background-color: #111827;
+        border-color: #374151;
+    }
+}
+
+
+body {
+    font-family: var(--font-auto);
+}
